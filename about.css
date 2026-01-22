@@ -1,0 +1,137 @@
+/* ================= ABOUT HERO ================= */
+.about-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, #010101, #0b253b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1,1,1,0.5);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-size: 46px;
+  color: #2f95cd;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #cbd5f5;
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-section {
+  padding: 90px 60px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-text {
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Cards */
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.about-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 30px rgba(47,149,205,0.2);
+  transition: transform 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+}
+
+.about-card h3 {
+  color: #2f95cd;
+  margin-bottom: 10px;
+}
+
+/* ================= TIMELINE ================= */
+.timeline-section {
+  padding: 90px 60px;
+  text-align: center;
+}
+
+.timeline {
+  max-width: 900px;
+  margin: 50px auto 0;
+  display: grid;
+  gap: 25px;
+}
+
+.timeline-item {
+  background: rgba(255,255,255,0.04);
+  padding: 25px;
+  border-left: 4px solid #2f95cd;
+  border-radius: 12px;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+.timeline-item:hover {
+  background: rgba(47,149,205,0.08);
+}
+
+.timeline-item span {
+  font-weight: 600;
+  color: #2f95cd;
+}
+
+/* ================= REVEAL EFFECT ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 900px) {
+  .about-hero h1 {
+    font-size: 36px;
+  }
+
+  .about-section,
+  .timeline-section {
+    padding: 60px 30px;
+  }
+}

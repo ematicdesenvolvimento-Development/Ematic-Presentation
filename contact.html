@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | Ematic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="EMATIC Logo" class="logo-img" />
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Início</a>
+    <a href="about.html#services">Serviços</a>
+    <a href="about.html">Sobre</a>
+    <a href="#contact-section">Contacto</a>
+  </nav>
+
+     <div class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+</header>
+
+<section class="contact-hero">
+  <div class="contact-overlay"></div>
+  <div class="contact-hero-content">
+    <h1>Fale Connosco</h1>
+    <p>Estamos prontos para ajudar o teu projecto a crescer com tecnologia de ponta.</p>
+  </div>
+</section>
+
+<section class="contact-section reveal" id="contact-section">
+  <div class="contact-container">
+
+    <!-- INFO -->
+    <div class="contact-info">
+      <h2>Informações de Contacto</h2>
+      <p class="contact-desc">
+        Preencha o formulário ou utilize um dos canais abaixo para falar connosco.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <h4>Email</h4>
+          <p><a href="mailto:contacto@ematic.com">contacto@ematic.com</a></p>
+        </div>
+
+        <div class="info-item">
+          <h4>Telefone</h4>
+          <p><a href="tel:+244923435741">+244 923 43 57 41</a></p>
+        </div>
+
+        <div class="info-item">
+          <h4>Localização</h4>
+          <p>Luanda, Angola</p>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="contact-form-container">
+      <h2>Envie uma Mensagem</h2>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Teu Nome" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Teu Email" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="subject" placeholder="Assunto" required>
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" placeholder="Tua Mensagem" required></textarea>
+        </div>
+
+        <button type="submit">Enviar Mensagem</button>
+        <p id="form-status"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+// Reveal on scroll
+const reveals = document.querySelectorAll('.reveal');
+const revealOnScroll = () => {
+  const windowHeight = window.innerHeight;
+  reveals.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < windowHeight - 120) section.classList.add('show');
+  });
+};
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+// Basic form interaction
+const form = document.getElementById('contact-form');
+const status = document.getElementById('form-status');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  status.innerText = "Mensagem enviada com sucesso! 🔒 Obrigado!";
+  status.style.color = "#2f95cd";
+  form.reset();
+});  
+
+
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  hamburger.classList.toggle('open');
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900) {
+    nav.classList.remove('active');
+    hamburger.classList.remove('open');
+  }
+});
+
+</script>
+
+</body>
+</html>

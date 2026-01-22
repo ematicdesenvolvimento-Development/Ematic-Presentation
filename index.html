@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <title>Ematic - Soluções Tecnológicas</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="EMATIC Logo" class="logo-img" />
+    </div>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Início</a>
+      <a href="#services">Serviços</a>
+      <a href="about.html">Sobre</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-video-container">
+      <video class="hero-video" muted playsinline>
+        <source src="hero1.mp4" type="video/mp4">
+      </video>
+
+      <video class="hero-video" muted playsinline>
+        <source src="hero2.mp4" type="video/mp4">
+      </video>
+
+      <video class="hero-video" muted playsinline>
+        <source src="hero3.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Soluções digitais sob medida para empresas</h1>
+      <p>
+        A Ematic desenvolve software, websites e soluções digitais
+        seguras, escaláveis e eficientes para empresas e empreendedores.
+      </p>
+      <a href="#services" class="hero-btn">Conheça nossos serviços</a>
+    </div>    
+
+    <!-- ================= HERO CARDS ================= -->
+    <div class="hero-cards">
+      <div class="hero-card reveal">
+        <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Consultoria</h3>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>Design Criativo</h3>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Aplicativos</h3>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="card-icon"><i class="fas fa-code"></i></div>
+        <h3>Desenvolvimento</h3>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="card-icon"><i class="fas fa-search"></i></div>
+        <h3>SEO</h3>
+      </div>
+    </div>
+  </section>  
+
+  <!-- ================= SOBRE NÓS ================= -->
+<section class="about-hero-section">
+  <div class="about-hero-container">
+    
+  <section class="about-split reveal-about">
+    <div class="about-image reveal-left">
+      <img src="about-us.jpg" alt="Equipa Ematic em atividade">
+    </div>
+
+    <div class="about-content reveal-right">
+      <h2>Sobre Nós</h2>
+      <h4>Enquadramento</h4>
+
+      <p>
+        Somos uma empresa focada em soluções digitais modernas,
+        combinando tecnologia, criatividade e estratégia para
+        impulsionar negócios no ambiente digital.
+      </p>
+
+      <div class="about-actions">
+        <a href="#sobre" class="hero-btn">Ler mais</a>
+
+        <div class="about-phone">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>+244 9XX XXX XXX</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <h2>Nossos Serviços</h2>
+  <div class="service-grid">
+
+    <div class="card service-card">
+      <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+      <h3>Desenvolvimento Web</h3>
+      <p>
+        Criamos sites modernos, responsivos e focados em conversão,
+        integrando UX/UI, SEO e performance.
+      </p>
+      <ul class="service-list">
+        <li>Landing pages e portais corporativos</li>
+        <li>E-commerce e lojas online</li>
+        <li>Otimização de velocidade e SEO</li>
+      </ul>
+    </div>
+
+    <div class="card service-card">
+      <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+      <h3>Aplicativos Móveis</h3>
+      <p>
+        Aplicações nativas e híbridas para Android e iOS,
+        com interface intuitiva e alto desempenho.
+      </p>
+      <ul class="service-list">
+        <li>Design UX/UI personalizado</li>
+        <li>Integração com APIs</li>
+        <li>Publicação nas lojas oficiais</li>
+      </ul>
+    </div>
+
+    <div class="card service-card">
+      <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+      <h3>Consultoria Digital</h3>
+      <p>
+        Estratégias digitais para transformação tecnológica
+        e otimização de processos internos.
+      </p>
+      <ul class="service-list">
+        <li>Análise de processos e auditoria de TI</li>
+        <li>Roadmap tecnológico</li>
+        <li>Planeamento estratégico digital</li>
+      </ul>
+    </div>
+
+    <div class="card service-card">
+      <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+      <h3>Marketing Digital</h3>
+      <p>
+        Campanhas digitais, SEO, SEM e gestão de redes sociais
+        para expandir a sua marca.
+      </p>
+      <ul class="service-list">
+        <li>Google Ads & Social Ads</li>
+        <li>Otimização SEO</li>
+        <li>Branding digital e Social Media</li>
+      </ul>
+    </div>
+  </div>
+</section>    
+
+<section class="software-section reveal-software">
+  <div class="software-content reveal-left">
+    <h2>Desenvolvimento de Software</h2>
+    <h4>Idealize, projete e impulsione o crescimento dos negócios</h4>
+
+    <p>
+      Criamos soluções digitais robustas, escaláveis e seguras,
+      focadas em transformar ideias em produtos tecnológicos
+      que geram impacto real.
+    </p>
+
+    <div class="software-cards">
+      <div class="soft-card">
+        <i class="fa-solid fa-handshake"></i>
+        <h5>Parceiro de Confiança</h5>
+      </div>
+
+      <div class="soft-card">
+        <i class="fa-solid fa-headset"></i>
+        <h5>Suporte Técnico</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="software-image reveal-right">
+    <img src="software.jpg" alt="Desenvolvimento de software">
+
+    <div class="experience-card">
+      <span>5+</span>
+      <p>Anos de experiência<br>em soluções de TI</p>
+    </div>
+  </div>
+</section>
+
+<section class="why-us reveal-why">
+  <div class="why-header">
+    <h2>Por que escolher-nos</h2>
+    <p>
+      Combinamos tecnologia, estratégia e inovação para criar soluções
+      digitais que impulsionam resultados reais.
+    </p>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-img">
+        <img src="experience.jpg" alt="Experiência em TI">
+      </div>
+      <i class="fa-solid fa-award"></i>
+      <h4>Experiência Comprovada</h4>
+      <p>Mais de 5 anos entregando soluções tecnológicas sólidas.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-img">
+        <img src="team.jpg" alt="Equipa especializada">
+      </div>
+      <i class="fa-solid fa-people-group"></i>
+      <h4>Equipa Especializada</h4>
+      <p>Profissionais focados em inovação e alto desempenho.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-img">
+        <img src="security.jfif" alt="Segurança digital">
+      </div>
+      <i class="fa-solid fa-shield-halved"></i>
+      <h4>Segurança e Qualidade</h4>
+      <p>Boas práticas, segurança e confiabilidade em cada projeto.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-img">
+        <img src="innovation.jpg" alt="Inovação tecnológica">
+      </div>
+      <i class="fa-solid fa-rocket"></i>
+      <h4>Inovação Constante</h4>
+      <p>Tecnologias modernas para acelerar seu crescimento.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Ematic</h3>
+      <p>
+        A Ematic é uma empresa focada em soluções digitais modernas,
+        oferecendo inovação, qualidade e confiança.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Links Rápidos</h4>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about-hero-section">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contacto</h4>
+      <p>Email: contacto@ematic.com</p>
+      <p>Telefone: +244 923 43 57 41</p>
+      <p>Luanda, Angola</p>
+    </div>
+  </div>
+
+<!-- Botão voltar ao topo -->
+<div id="back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+<!-- Ícones sociais dentro do footer -->
+<div class="footer-column">
+  <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+  <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+
+
+  <div class="footer-bottom">
+    © 2025 <strong>Ematic</strong>. Todos os direitos reservados.
+  </div> 
+</footer>
+
+<!-- ================= SCRIPTS (IGUAIS AO TEU CÓDIGO) ================= -->
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav');
+const header = document.querySelector('header');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  hamburger.classList.toggle('open');
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900) {
+    nav.classList.remove('active');
+    hamburger.classList.remove('open');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
+</script>
+
+<script>
+function revealServices() {
+  const cards = document.querySelectorAll('.service-card');
+  const windowHeight = window.innerHeight;
+  cards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if(cardTop < windowHeight - 100) {
+      card.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealServices);
+window.addEventListener('load', revealServices);
+</script>
+
+<script>
+const serviceCards = document.querySelectorAll('.service-card');
+
+const revealOnScroll = () => {
+  const windowHeight = window.innerHeight;
+  serviceCards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if (cardTop < windowHeight - 100) {
+      card.classList.add('show');
+    }
+  });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+</script>
+
+<script>
+const videos = document.querySelectorAll('.hero-video');
+let currentVideo = 0;
+
+function changeVideo() {
+  videos[currentVideo].classList.remove('active');
+  videos[currentVideo].pause();
+  videos[currentVideo].currentTime = 0;
+
+  currentVideo = (currentVideo + 1) % videos.length;
+  videos[currentVideo].classList.add('active');
+  videos[currentVideo].play();
+}
+
+videos[currentVideo].classList.add('active');
+videos[currentVideo].play();
+setInterval(changeVideo, 5000);
+</script>
+
+<script>
+const heroCards = document.querySelectorAll('.hero-card');
+
+function revealHeroCards() {
+  const windowHeight = window.innerHeight;
+  heroCards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if(cardTop < windowHeight - 100) {
+      card.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealHeroCards);
+window.addEventListener('load', revealHeroCards);
+</script>
+
+<script>
+const aboutSection = document.querySelector('.reveal-about');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.3 });
+
+observer.observe(aboutSection);
+</script>
+
+<script>
+const softwareSection = document.querySelector('.reveal-software');
+
+const softwareObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.3 });
+
+softwareObserver.observe(softwareSection);
+</script>
+
+<script>
+const whySection = document.querySelector('.reveal-why');
+
+const whyObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.25 });
+
+whyObserver.observe(whySection);   
+ 
+ // Footer fade-in ao rolar
+const footer = document.querySelector('.footer.fade-in');
+const footerObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      footer.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+if (footer) footerObserver.observe(footer);
+
+// Botão voltar ao topo
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTop.style.display = 'block';
+  } else {
+    backToTop.style.display = 'none';
+  }
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+</script>
+
+</body>
+</html>
